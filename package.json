@@ -1,0 +1,32 @@
+{
+  "name": "workspace-chroma",
+  "displayName": "Workspace Chroma",
+  "description": "Deterministic workspace theming based on directory name hashing.",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": ["Themes", "Other"],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "workspaceChroma.rehash",
+        "title": "Chroma: Re-calculate Workspace Color"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/node": "^20.x",
+    "@types/vscode": "^1.80.0",
+    "typescript": "^5.3.0"
+  }
+}
