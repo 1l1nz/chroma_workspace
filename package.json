@@ -1,5 +1,5 @@
 {
-  "name": "workspace-chroma",
+  "name": "chroma_workspace",
   "displayName": "Workspace Chroma",
   "description": "Deterministic workspace theming based on directory name hashing.",
   "version": "1.0.0",
